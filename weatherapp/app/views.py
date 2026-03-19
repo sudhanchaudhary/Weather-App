@@ -10,12 +10,12 @@ def home(request):
         city=request.POST.get('city')
     else:
         city='kathmandu'
-    weather_api=config('weather_api')
-    city_api=config('city_api')
-    url=f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={weather_api}'
+    # weather_api=config('weather_api')
+    # city_api=config('city_api')
+    url=f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=d97e3d6a01acac1e658894664f74a548'
     param={'units':'metric'}
     data=requests.get(url,param).json()
-    image_url=f'https://api.unsplash.com/search/photos?query={city}&per_page=1&client_id={city_api}'
+    image_url=f'https://api.unsplash.com/search/photos?query={city}&per_page=1&client_id=ogpUuxNpc99f56CDbbzOzrmunQqkpVvFL4mlO_P-Spg'
     response=requests.get(image_url).json()
     
     try:

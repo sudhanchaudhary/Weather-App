@@ -139,7 +139,7 @@
       line-height: 1;
       margin-bottom: 10px;
       background: linear-gradient(135deg, #fff, #c3cfe2);
-      -webkit-background-clip: text;
+      /* -webkit-background-clip: text; */
       -webkit-text-fill-color: transparent;
     }
 
